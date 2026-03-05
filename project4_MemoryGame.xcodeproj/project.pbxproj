@@ -11,6 +11,7 @@
 		066680C12F59127A00E0568D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066680C02F59127A00E0568D /* ContentView.swift */; };
 		066680C32F59127C00E0568D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066680C22F59127C00E0568D /* Assets.xcassets */; };
 		066680C62F59127C00E0568D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066680C52F59127C00E0568D /* Preview Assets.xcassets */; };
+		066680CF2F5928E400E0568D /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066680CE2F5928E400E0568D /* cardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		066680C02F59127A00E0568D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		066680C22F59127C00E0568D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		066680C52F59127C00E0568D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		066680CE2F5928E400E0568D /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				066680BE2F59127A00E0568D /* project4_MemoryGameApp.swift */,
 				066680C02F59127A00E0568D /* ContentView.swift */,
+				066680CE2F5928E400E0568D /* cardView.swift */,
 				066680C22F59127C00E0568D /* Assets.xcassets */,
 				066680C42F59127C00E0568D /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066680CF2F5928E400E0568D /* cardView.swift in Sources */,
 				066680C12F59127A00E0568D /* ContentView.swift in Sources */,
 				066680BF2F59127A00E0568D /* project4_MemoryGameApp.swift in Sources */,
 			);

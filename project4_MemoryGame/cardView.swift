@@ -7,12 +7,46 @@
 
 import SwiftUI
 
+struct Card: Equatable, Identifiable {
+    let id = UUID()
+    let imageName: String
+    
+    var isFaceUp: Bool = false
+    var isMatched: Bool = false
+    
+}
+
 struct cardView: View {
+    
+    let card: Card
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            if card.isMatched {
+                // Disappear when matched
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(Color.clear)
+            } else {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(card.isFaceUp ? Color.blue.gradient : Color.indigo.gradient)
+                    .shadow(color: .black.opacity(0.25), radius: 3, x: -1, y: 1)
+
+                if card.isFaceUp {
+                    Image(systemName: card.imageName)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(18)
+                        .foregroundStyle(.white)
+                }
+            }
+        }
+        .aspectRatio(2/3, contentMode: .fit) 
+        .opacity(card.isMatched ? 0 : 1)
+        .animation(.default, value: card.isMatched)
     }
 }
 
 #Preview {
-    cardView()
+    cardView(card: Card(imageName: "globe"))
 }
